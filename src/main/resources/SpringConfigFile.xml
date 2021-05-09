@@ -5,6 +5,5 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="welcomeBean" class="spring_basics.HelloWorld">
-
     </bean>
 </beans>
