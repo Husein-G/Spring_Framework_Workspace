@@ -7,6 +7,6 @@ public class HelloWorldTest {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfigFile.xml");
         HelloWorld greetObject = (HelloWorld) context.getBean("welcomeBean");
-        greetObject.welcome();
+        greetObject.sayHello();
     }
 }

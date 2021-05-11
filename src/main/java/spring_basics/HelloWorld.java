@@ -1,7 +1,17 @@
 package spring_basics;
 
 public class HelloWorld {
-    public void welcome () {
-        System.out.println("Hello and welcome to the world of Spring!!!");
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void sayHello () {
+        System.out.println("Hello " + this.name);
     }
 }
