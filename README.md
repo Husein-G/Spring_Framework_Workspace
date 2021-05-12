@@ -1,2 +1,2 @@
-# Spring_Framework_Workspace
+# Spring Framework Workspace
 Spring framework practice programs.
