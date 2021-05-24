@@ -3,8 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="main" name="firstAlias,secondAlias,thirdAlias" class="spring_basics.HelloWorld">
-    </bean>
-    <alias name="main" alias="fourthAlias" />
-    <alias name="main" alias="fifthAlias" />
+    <import resource="services.xml"/>
+    <import resource="resources/messageSource.xml"/>
+    <import resource="/resources/themeSource.xml"/>
+
+    <bean id="bean1" class="spring_basics.HelloWorld"/>
+    <bean id="bean2" class="spring_basics.HelloWorld"/>
 </beans>
