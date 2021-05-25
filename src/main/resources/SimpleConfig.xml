@@ -4,7 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="SimpleConfig.xml"/>
-    <import resource="SpringConfigFile.xml"/>
+    <bean id="greetingBean" class="spring_basics.HelloWorld">
+        <property name="name" value="How is life going on?" />
+    </bean>
 
 </beans>
